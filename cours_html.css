@@ -1,0 +1,288 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden; /* supprime scroll horizontal */
+}
+
+/* Header */
+.header {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  z-index: 100;
+}
+.logo h1 {
+  font-weight: 900;
+  font-size: 26px;
+}
+
+.logo h1 span {
+  color: red;
+}
+
+.h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu ul li {
+  background-color: red;
+  border-radius: 5px;
+  padding: 8px 12px;
+  transition: transform 0.3s;
+}
+
+.menu ul li:hover {
+  transform: scale(1.1) rotate(1.5deg);
+  cursor: pointer;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.imenu {
+  width: 30px;
+  margin-left: 15px;
+  cursor: pointer;
+  display: none; /* caché par défaut */
+}
+/* =========================
+   RESET & BASE
+========================= */
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.8;
+    padding: 20px;
+}
+.main{
+    margin-top: 180px;
+}
+/* =========================
+   TITRES
+========================= */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #1e3a8a;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+section {
+    background: #ffffff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   TEXTE
+========================= */
+p {
+    margin-bottom: 15px;
+}
+
+ul, ol {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* =========================
+   CODE
+========================= */
+pre {
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+    padding: 18px;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+code {
+    color: #ffd479;
+}
+
+/* =========================
+   RESULTAT
+========================= */
+.resultat {
+    background-color: #ecfdf5;
+    border-left: 6px solid #10b981;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+/* =========================
+   LIENS
+========================= */
+a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   TABLEAUX
+========================= */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #e5e7eb;
+}
+
+/* =========================
+   FORMULAIRES
+========================= */
+form {
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #1d4ed8;
+}
+
+/* =========================
+   IMAGES & MEDIA
+========================= */
+img, video {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #6b7280;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* 📱 Smartphones */
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    pre {
+        font-size: 0.85rem;
+        padding: 12px;
+    }
+}
+
+/* 💻 Tablettes */
+@media (max-width: 900px) {
+
+    section {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+

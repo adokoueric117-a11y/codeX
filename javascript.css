@@ -1,0 +1,148 @@
+/* RESET DE BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+    line-height: 1.7;
+}
+/* Header */
+.header {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  z-index: 100;
+}
+
+.logo h1 {
+  font-weight: 900;
+  font-size: 26px;
+}
+
+.logo h1 span {
+  color: red;
+}
+
+.h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 16px;
+  margin-top: 5px;
+  color: black;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu ul li {
+  background-color: red;
+  border-radius: 5px;
+  padding: 8px 12px;
+  transition: transform 0.3s;
+}
+
+.menu ul li:hover {
+  transform: scale(1.1) rotate(1.5deg);
+  cursor: pointer;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.imenu {
+  width: 30px;
+  margin-left: 15px;
+  cursor: pointer;
+  display: none; /* caché par défaut */
+}
+.main{
+    margin-top: 180px;
+}
+/* TITRES */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+h2 {
+    color: #1e40af;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #1d4ed8;
+    margin-bottom: 10px;
+}
+
+/* PARAGRAPHES ET LISTES */
+p, ul, ol, pre {
+    margin-bottom: 15px;
+}
+
+/* CODE EXEMPLE */
+pre {
+    background-color: #1e1e2f;
+    color: #f8f8f2;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-size: 0.95rem;
+}
+
+/* RÉSULTATS */
+strong {
+    color: #065f46;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 25px 0;
+}
+
+/* LISTES */
+ul, ol {
+    margin-left: 25px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    pre {
+        font-size: 0.85rem;
+        padding: 12px;
+    }
+}

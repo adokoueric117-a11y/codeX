@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Cours JavaScript Complet</title>
+             <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="javascript.css">
+</head>
+<body>
+  <header class="header">
+        <div class="logo">
+                    <h1>Code<span> X> </span><h2 class="h2">Learn Code with Ease</h2></h1>
+
+        </div>
+        <div class="menu">
+              <ul>
+            <li><a href="http://127.0.0.1:5500/codeX.html">Acceuil</a></li>
+            <li><a href="http://127.0.0.1:5500/blog.html">Blog</a></li>
+            <li><a href="http://127.0.0.1:5500/cours.html">Cours</a></li>
+            <li><a href="http://127.0.0.1:5500/about.html">About</a></li>
+            <img src="./menu.png" alt="" class="imenu">
+        </ul>
+        </div>
+    </header>
+    <main class="main">
+<h1>Cours JavaScript Complet</h1>
+
+<p>JavaScript (JS) est un langage de programmation qui rend les pages web interactives et dynamiques.</p>
+
+<hr>
+
+<h2>1. Introduction à JavaScript</h2>
+<p>JS s’exécute dans le navigateur et permet de manipuler le HTML, le CSS et le DOM.</p>
+
+<h3>Exemple :</h3>
+<pre>
+console.log("Bonjour le monde !");
+</pre>
+<p><strong>Résultat :</strong> Affiche dans la console : Bonjour le monde !</p>
+
+<hr>
+
+<h2>2. Variables et types de base</h2>
+<pre>
+// Déclaration
+let nom = "Eric";
+const age = 20;
+var taille = 1.75;
+
+// Types
+console.log(typeof nom);    // string
+console.log(typeof age);    // number
+console.log(typeof taille); // number
+</pre>
+<p><strong>Résultat :</strong> Affiche les types des variables dans la console</p>
+
+<hr>
+
+<h2>3. Opérations et opérateurs</h2>
+<pre>
+let x = 10;
+let y = 3;
+console.log(x + y); // 13
+console.log(x - y); // 7
+console.log(x * y); // 30
+console.log(x / y); // 3.333...
+console.log(x % y); // 1
+</pre>
+
+<hr>
+
+<h2>4. Conditions</h2>
+<pre>
+let age = 18;
+if(age >= 18){
+    console.log("Adulte");
+} else {
+    console.log("Mineur");
+}
+</pre>
+
+<hr>
+
+<h2>5. Boucles</h2>
+
+<h3>For</h3>
+<pre>
+for(let i=0; i<5; i++){
+    console.log(i);
+}
+</pre>
+
+<h3>While</h3>
+<pre>
+let i = 0;
+while(i < 5){
+    console.log(i);
+    i++;
+}
+</pre>
+
+<hr>
+
+<h2>6. Fonctions</h2>
+<pre>
+function saluer(nom){
+    return "Bonjour " + nom;
+}
+console.log(saluer("Eric"));
+</pre>
+
+<hr>
+
+<h2>7. Tableaux</h2>
+<pre>
+let fruits = ["pomme", "banane", "cerise"];
+fruits.push("orange");
+console.log(fruits[0]); // pomme
+console.log(fruits);
+</pre>
+
+<hr>
+
+<h2>8. Objets</h2>
+<pre>
+let personne = {
+    nom: "Eric",
+    age: 20
+};
+console.log(personne.nom);
+personne.ville = "Lomé";
+</pre>
+
+<hr>
+
+<h2>9. DOM (Document Object Model)</h2>
+<pre>
+&lt;!-- HTML --&gt;
+&lt;button id="btn"&gt;Cliquez&lt;/button&gt;
+
+&lt;!-- JS --&gt;
+let btn = document.getElementById("btn");
+btn.addEventListener("click", function(){
+    alert("Bouton cliqué !");
+});
+</pre>
+<p><strong>Résultat :</strong> Affiche une alerte quand on clique sur le bouton.</p>
+
+<hr>
+
+<h2>10. Sélecteurs DOM</h2>
+<pre>
+let titre = document.querySelector("h1");
+titre.textContent = "Nouveau titre";
+let items = document.querySelectorAll("li");
+</pre>
+
+<p><strong>Résultat :</strong> modifie le texte et récupère tous les éléments li</p>
+
+<hr>
+
+<h2>11. Événements</h2>
+<pre>
+document.getElementById("input").addEventListener("input", function(e){
+    console.log(e.target.value);
+});
+</pre>
+<p><strong>Résultat :</strong> Affiche la valeur du champ au fur et à mesure que l’utilisateur tape</p>
+
+<hr>
+
+<h2>12. Console et debugging</h2>
+<pre>
+console.log("Message simple");
+console.warn("Attention !");
+console.error("Erreur !");
+</pre>
+<p><strong>Résultat :</strong> messages visibles dans la console du navigateur</p>
+
+<hr>
+
+<h2>13. ES6 et nouveautés</h2>
+<pre>
+let nom = "Eric";
+const PI = 3.14;
+let carre = x => x*x;
+let [a,b] = [1,2];
+</pre>
+<p><strong>Résultat :</strong> utilisation de let, const, fonctions fléchées et destructuring</p>
+
+<hr>
+
+<h2>14. JSON</h2>
+<pre>
+let obj = {nom:"Eric", age:20};
+let json = JSON.stringify(obj);
+console.log(json); // {"nom":"Eric","age":20}
+
+let obj2 = JSON.parse(json);
+console.log(obj2.nom); // Eric
+</pre>
+
+<hr>
+
+<h2>15. Mini-projet JavaScript</h2>
+<p>Créer un compteur :</p>
+<ul>
+<li>Un bouton + et un bouton -</li>
+<li>Afficher la valeur dans une div</li>
+<li>Compteur interactif avec DOM et événements</li>
+</ul>
+
+<p><strong>Résultat :</strong> compteur dynamique sur la page</p>
+
+<hr>
+
+<h2>Conclusion</h2>
+<p>
+JavaScript permet de rendre les pages web interactives, dynamiques et puissantes.  
+Avec le DOM, la console, les événements et les objets, on peut créer des sites modernes.
+</p>
+<hr>
+
+<h2>16. Programmation Orientée Objet (POO)</h2>
+
+<p>
+La POO permet d’organiser le code en <strong>objets</strong> avec des <strong>propriétés</strong> et des <strong>méthodes</strong>.
+En JavaScript, on utilise principalement des <strong>classes</strong>.
+</p>
+
+<h3>Exemple de classe simple :</h3>
+
+<pre>
+class Personne {
+    constructor(nom, age) {
+        this.nom = nom;
+        this.age = age;
+    }
+
+    saluer() {
+        return `Bonjour, je m'appelle ${this.nom} et j'ai ${this.age} ans.`;
+    }
+}
+
+// Création d'un objet
+let eric = new Personne("Eric", 20);
+console.log(eric.saluer());
+</pre>
+
+<p><strong>Résultat :</strong> Affiche : Bonjour, je m'appelle Eric et j'ai 20 ans.</p>
+
+<hr>
+
+<h3>Héritage (extends)</h3>
+
+<pre>
+class Employe extends Personne {
+    constructor(nom, age, poste) {
+        super(nom, age);
+        this.poste = poste;
+    }
+
+    travailler() {
+        return `${this.nom} travaille en tant que ${this.poste}.`;
+    }
+}
+
+let anna = new Employe("Anna", 25, "Développeuse");
+console.log(anna.saluer());
+console.log(anna.travailler());
+</pre>
+
+<p><strong>Résultat :</strong></p>
+<ul>
+    <li>Bonjour, je m'appelle Anna et j'ai 25 ans.</li>
+    <li>Anna travaille en tant que Développeuse.</li>
+</ul>
+
+<hr>
+
+<h3>Méthodes statiques</h3>
+
+<pre>
+class Calcul {
+    static addition(a, b) {
+        return a + b;
+    }
+}
+
+console.log(Calcul.addition(5, 3)); // 8
+</pre>
+
+<p><strong>Résultat :</strong> Affiche 8 (pas besoin de créer un objet)</p>
+
+<hr>
+
+<h3>Encapsulation (propriétés privées)</h3>
+
+<pre>
+class Compte {
+    #solde = 0;  // propriété privée
+
+    depot(montant) {
+        this.#solde += montant;
+    }
+
+    getSolde() {
+        return this.#solde;
+    }
+}
+
+let monCompte = new Compte();
+monCompte.depot(100);
+console.log(monCompte.getSolde()); // 100
+</pre>
+
+<p><strong>Résultat :</strong> le solde est accessible uniquement via la méthode getSolde()</p>
+
+<hr>
+
+<h3>Conclusion sur la POO en JavaScript</h3>
+
+<p>
+La POO permet de :
+<ul>
+    <li>Structurer le code en objets</li>
+    <li>Réutiliser du code via l’héritage</li>
+    <li>Encapsuler les données pour plus de sécurité</li>
+    <li>Créer des applications plus modulaires et maintenables</li>
+</ul>
+</p>
+
+<p>
+Avec les classes, les objets et l’héritage, JavaScript devient plus puissant pour des projets complexes.
+</p>
+    </main>
+
+
+</body>
+</html>

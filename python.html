@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Cours Python Complet</title>
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="python.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+                    <h1>Code<span> X> </span><h2 class="h2">Learn Code with Ease</h2></h1>
+
+        </div>
+        <div class="menu">
+              <ul>
+            <li><a href="http://127.0.0.1:5500/codeX.html">Acceuil</a></li>
+            <li><a href="http://127.0.0.1:5500/blog.html">Blog</a></li>
+            <li><a href="http://127.0.0.1:5500/cours.html">Cours</a></li>
+            <li><a href="http://127.0.0.1:5500/about.html">About</a></li>
+            <img src="./menu.png" alt="" class="imenu">
+        </ul>
+        </div>
+    </header>
+    <main class="main">
+        <h1>Cours Python Complet</h1>
+<p>Python est un langage de programmation polyvalent, simple et lisible, utilisé pour le développement web, l’analyse de données, l’intelligence artificielle et bien plus.</p>
+
+<hr>
+
+<h2>1. Introduction à Python</h2>
+<p>Python est interprété, dynamique et très populaire pour les débutants et les professionnels.</p>
+
+<h3>Exemple :</h3>
+<pre>
+print("Bonjour le monde !")
+</pre>
+<p><strong>Résultat :</strong> Affiche : Bonjour le monde !</p>
+
+<hr>
+
+<h2>2. Variables et types de base</h2>
+<pre>
+# Variables
+nom = "Eric"
+age = 20
+taille = 1.75
+est_etudiant = True
+</pre>
+<p><strong>Résultat :</strong> on définit une chaîne, un entier, un float et un booléen.</p>
+
+<hr>
+
+<h2>3. Opérations de base</h2>
+<pre>
+x = 10
+y = 3
+print(x + y)  # Addition
+print(x - y)  # Soustraction
+print(x * y)  # Multiplication
+print(x / y)  # Division
+print(x % y)  # Modulo
+</pre>
+<p><strong>Résultat :</strong> affiche 13, 7, 30, 3.333..., 1</p>
+
+<hr>
+
+<h2>4. Structures conditionnelles</h2>
+<pre>
+age = 18
+if age >= 18:
+    print("Adulte")
+else:
+    print("Mineur")
+</pre>
+<p><strong>Résultat :</strong> Affiche : Adulte</p>
+
+<hr>
+
+<h2>5. Boucles</h2>
+
+<h3>Boucle for</h3>
+<pre>
+for i in range(5):
+    print(i)
+</pre>
+<p><strong>Résultat :</strong> 0 1 2 3 4</p>
+
+<h3>Boucle while</h3>
+<pre>
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+</pre>
+<p><strong>Résultat :</strong> 0 1 2 3 4</p>
+
+<hr>
+
+<h2>6. Listes</h2>
+<pre>
+fruits = ["pomme", "banane", "cerise"]
+print(fruits[0])  # pomme
+fruits.append("orange")
+print(fruits)
+</pre>
+<p><strong>Résultat :</strong> affiche ["pomme", "banane", "cerise", "orange"]</p>
+
+<hr>
+
+<h2>7. Dictionnaires</h2>
+<pre>
+personne = {"nom": "Eric", "age": 20}
+print(personne["nom"])
+personne["ville"] = "Lomé"
+</pre>
+<p><strong>Résultat :</strong> Affiche Eric et ajoute la clé "ville"</p>
+
+<hr>
+
+<h2>8. Fonctions</h2>
+<pre>
+def saluer(nom):
+    return "Bonjour " + nom
+
+print(saluer("Eric"))
+</pre>
+<p><strong>Résultat :</strong> Bonjour Eric</p>
+
+<hr>
+
+<h2>9. Modules et import</h2>
+<pre>
+import math
+print(math.sqrt(16))  # 4.0
+</pre>
+
+<hr>
+
+<h2>10. Fichiers</h2>
+<pre>
+# Écriture
+with open("test.txt", "w") as f:
+    f.write("Bonjour")
+
+# Lecture
+with open("test.txt", "r") as f:
+    print(f.read())
+</pre>
+
+<hr>
+
+<h2>11. Classes et objets</h2>
+<pre>
+class Personne:
+    def __init__(self, nom, age):
+        self.nom = nom
+        self.age = age
+
+p = Personne("Eric", 20)
+print(p.nom)
+</pre>
+<p><strong>Résultat :</strong> Affiche Eric</p>
+
+<hr>
+
+<h2>12. Exceptions</h2>
+<pre>
+try:
+    x = 10 / 0
+except ZeroDivisionError:
+    print("Division par zéro !")
+</pre>
+<p><strong>Résultat :</strong> Affiche : Division par zéro !</p>
+
+<hr>
+
+<h2>13. Listes compréhensions</h2>
+<pre>
+nombres = [1,2,3,4,5]
+carrés = [x**2 for x in nombres]
+print(carrés)
+</pre>
+<p><strong>Résultat :</strong> [1, 4, 9, 16, 25]</p>
+
+<hr>
+
+<h2>14. Mini-projet Python</h2>
+<p>Créer un programme qui :</p>
+<ul>
+    <li>Demande le nom et l’âge</li>
+    <li>Affiche un message personnalisé</li>
+    <li>Calcule l’année de naissance</li>
+</ul>
+
+<p><strong>Résultat :</strong> interaction avec l’utilisateur et calcul automatique.</p>
+
+<hr>
+
+<h2>Conclusion</h2>
+<p>
+Python est simple à apprendre, puissant et polyvalent.
+Il sert pour le web, l’analyse de données, l’IA et plus encore.
+</p>
+<hr>
+
+<h2>17. Programmation Orientée Objet (POO) en Python</h2>
+
+<p>
+La Programmation Orientée Objet permet d’organiser le code en <strong>objets</strong> avec des <strong>attributs</strong> (données) et des <strong>méthodes</strong> (fonctions).
+En Python, on utilise les <strong>classes</strong> pour créer des objets.
+</p>
+
+<h3>Exemple de classe simple :</h3>
+
+<pre>
+class Personne:
+    def __init__(self, nom, age):
+        self.nom = nom
+        self.age = age
+
+    def saluer(self):
+        return f"Bonjour, je m'appelle {self.nom} et j'ai {self.age} ans."
+
+# Création d'un objet
+eric = Personne("Eric", 20)
+print(eric.saluer())
+</pre>
+
+<p><strong>Résultat :</strong> Affiche : Bonjour, je m'appelle Eric et j'ai 20 ans.</p>
+
+<hr>
+
+<h3>Héritage (subclasses)</h3>
+
+<pre>
+class Employe(Personne):
+    def __init__(self, nom, age, poste):
+        super().__init__(nom, age)
+        self.poste = poste
+
+    def travailler(self):
+        return f"{self.nom} travaille en tant que {self.poste}."
+
+anna = Employe("Anna", 25, "Développeuse")
+print(anna.saluer())
+print(anna.travailler())
+</pre>
+
+<p><strong>Résultat :</strong></p>
+<ul>
+    <li>Bonjour, je m'appelle Anna et j'ai 25 ans.</li>
+    <li>Anna travaille en tant que Développeuse.</li>
+</ul>
+
+<hr>
+
+<h3>Méthodes et attributs privés</h3>
+
+<pre>
+class Compte:
+    def __init__(self):
+        self.__solde = 0  # attribut privé
+
+    def depot(self, montant):
+        self.__solde += montant
+
+    def get_solde(self):
+        return self.__solde
+
+mon_compte = Compte()
+mon_compte.depot(100)
+print(mon_compte.get_solde())
+</pre>
+
+<p><strong>Résultat :</strong> 100 (le solde est protégé et accessible uniquement via la méthode)</p>
+
+<hr>
+
+<h3>Méthodes de classe et statiques</h3>
+
+<pre>
+class Calcul:
+    @staticmethod
+    def addition(a, b):
+        return a + b
+
+print(Calcul.addition(5, 3))  # 8
+</pre>
+
+<p><strong>Résultat :</strong> 8 (pas besoin de créer un objet)</p>
+
+<hr>
+
+<h3>Conclusion sur la POO en Python</h3>
+
+<p>
+La POO en Python permet de :
+<ul>
+    <li>Structurer le code avec des objets</li>
+    <li>Réutiliser le code via l’héritage</li>
+    <li>Encapsuler les données pour plus de sécurité</li>
+    <li>Créer des programmes plus modulaires et maintenables</li>
+</ul>
+</p>
+
+<p>
+Les classes, objets, héritage et encapsulation sont essentiels pour développer des projets Python complexes et professionnels.
+</p>
+    </main>
+
+
+</body>
+</html>
